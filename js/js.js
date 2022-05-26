@@ -43,18 +43,27 @@
 // }
 
 
-let payway = prompt('請輸入付款方式:1.ATM 2.刷卡 3.貨到付款','1');
-
-switch (payway){
-    case "1" :
-        document.write('付款方式為ATM匯款');
+let score = prompt('請輸入分數',);
+score = Number(score);
+switch (true){
+    case score<0 :
+        alert('請輸入大於0的數字');
         break;
-    case "2" :
-        document.write('付款方式為刷卡');
+    case score>=0 && score<60 :
+        document.write('不及格');
         break;
-    case "3" :
-        document.write('付款方式為貨到付款');
+    case score>=60 && score<70 :
+        document.write('丙等');
+        break;
+    case score>=70 && score<80 :
+        document.write('乙等');
+        break;
+    case score>=80 && score<90 :
+        document.write('甲等');
+        break;
+    case score>=90 && score<=100 :
+        document.write('優等');
         break;
     default :
-        document.write('請選擇正確的付款方式');
+        alert('請輸入小於100的數字');
 }
