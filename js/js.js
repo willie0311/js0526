@@ -20,8 +20,10 @@
 
 
 let a = prompt('請輸入數字','0');
-if (a>=0){
-    document.write('數字為正數')
-}else{
-    document.write('數字為負數')
-}
+// if (a>=0){
+//     document.write('數字為正數')
+// }else{
+//     document.write('數字為負數')
+// }
+(a>=0)?document.write('數字為正數'):document.write('數字為負數');
+
