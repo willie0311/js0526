@@ -17,13 +17,19 @@
 // console.log(text1.indexOf("S"));
 // console.log(text1.split(""));
 
+// (a>=0)?document.write('數字為正數'):document.write('數字為負數');
 
+let score = prompt('請輸入分數','0');
+if (score>=60 && score<70){
+    document.write('丙等')
+}else if(score>=70 && score<80){
+    document.write('乙等')
+}else if(score>=80 && score<90){
+    document.write('甲等')
+}else if(score>=90 && score<=100){
+    document.write('優等')
+}else{
+    document.write('不及格')
+}
 
-let a = prompt('請輸入數字','0');
-// if (a>=0){
-//     document.write('數字為正數')
-// }else{
-//     document.write('數字為負數')
-// }
-(a>=0)?document.write('數字為正數'):document.write('數字為負數');
 
