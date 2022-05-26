@@ -20,16 +20,18 @@
 // (a>=0)?document.write('數字為正數'):document.write('數字為負數');
 
 let score = prompt('請輸入分數','0');
-if (score>=60 && score<70){
-    document.write('丙等')
+if (score<0){
+    alert('請輸入大於0的數字');
+}else if(score>=0 && score<60){
+    document.write('不及格');
+}else if(score>=60 && score<70){
+    document.write('丙等');
 }else if(score>=70 && score<80){
-    document.write('乙等')
+    document.write('乙等');
 }else if(score>=80 && score<90){
-    document.write('甲等')
+    document.write('甲等');
 }else if(score>=90 && score<=100){
-    document.write('優等')
+    document.write('優等');
 }else{
-    document.write('不及格')
+    alert('請輸入小於100的數字');
 }
-
-
