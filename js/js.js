@@ -82,9 +82,11 @@
 //     document.write(i + ' ');
 // }while(i<10)
 
-let countI = 0;
+
 for( i=1 ; i<=10 ; i++ ){
-    countI += i;
-    console.log('countI='+countI, 'i+' + i);
+    if (i==5){
+        continue;
+        console.log(i)
+    } 
+    document.write(i);
 }
-document.write(countI);
