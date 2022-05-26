@@ -69,8 +69,15 @@
 // }
 
 
-let i= 0;
-while (i<10){
+// let i= 0;
+// while (i<10){
+//     i++;
+//     document.write(i + ' ');
+// }
+
+// 最少程式會執行一次
+let i = 0;
+do {
     i++;
     document.write(i + ' ');
-}
+}while(i<10)
