@@ -83,8 +83,16 @@
 // }while(i<10)
 
 
-for( i=2 ; i<10 ; i++ ){
-    for( j=1 ; j<10 ; j++ ){
-        console.log('i='+i,'j='+j,'相乘得'+i*j)
-    }
+// for( i=2 ; i<10 ; i++ ){
+//     for( j=1 ; j<10 ; j++ ){
+//         console.log('i='+i,'j='+j,'相乘得'+i*j)
+//     }
+// }
+
+//宣告函式
+function myname(myid){
+    document.write('姓名:'+ myid)
 }
+
+//執行
+myname('willie');
