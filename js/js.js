@@ -104,6 +104,7 @@
 // //pdc是變數
 // let pdc = prompt('請輸入攝氏溫度:','25');
 // document.write('華氏溫度為:'+ convertDF(pdc))
+
 function sort(nums){
     //找出未排序中最小值
 function minIndex(left,right){
@@ -122,6 +123,7 @@ for(let i= 0;i<nums.length;i++){
     let selected = minIndex(i,i+1);
     if(i !== selected){
         //交換i與selected處的元素
+        //換位子的程式
         let tmp = nums[i];
         nums[i] = nums[selected];
         nums[selected] = tmp;
