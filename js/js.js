@@ -150,17 +150,28 @@
 
 //多維陣列
 
-let student = new Array();
-student[0]=["willie","99","96"];
-student[1]=["willie","97","92"];
-student[2]=["willie","86","80"];
+// let student = new Array();
+// student[0]=["willie","99","96"];
+// student[1]=["willie","97","92"];
+// student[2]=["willie","86","80"];
 
-document.write("<table border='1'><tr><td>姓名</td><td>國文</td><td>英文</td></tr>");
-for(let i=0; i<student.length;i++){
-    document.write("<tr>");
-    for(let j=0 ; j<student[i].length;j++){
-        document.write('<td>'+student[i][j]+"</td>");
-    }
-    document.write('</tr>');
-}
-document.write('</table>');
+// document.write("<table border='1'><tr><td>姓名</td><td>國文</td><td>英文</td></tr>");
+// for(let i=0; i<student.length;i++){
+//     document.write("<tr>");
+//     for(let j=0 ; j<student[i].length;j++){
+//         document.write('<td>'+student[i][j]+"</td>");
+//     }
+//     document.write('</tr>');
+// }
+// document.write('</table>');
+
+
+let x = [100,78,69,85,33];
+x.push(99);
+console.log(x);
+x.pop();
+console.log(x);
+x.unshift(99);
+console.log(x);
+x.shift();
+console.log(x);
