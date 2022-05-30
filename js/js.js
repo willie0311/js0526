@@ -233,7 +233,12 @@
 // console.warn('Hi');
 
 
-let myH1 = document.getElementById('first');
-let myP = document.getElementsByClassName('second');
-console.log(myH1);
-console.log(myP);
+// let myH1 = document.getElementById('first');
+// let myP = document.getElementsByClassName('second');
+// console.log(myH1);
+// console.log(myP);
+
+let first = document.querySelector('#text');
+console.log(first);
+let second = document.querySelectorAll('.second');
+console.log(second);
