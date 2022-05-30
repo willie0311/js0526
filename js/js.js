@@ -166,7 +166,7 @@
 // document.write('</table>');
 
 
-let x = [100,78,69,85,33,99,78,88];
+// let x = [100,78,69,85,33,99,78,88];
 // x.push(99);
 // console.log(x);
 // x.pop();
@@ -177,19 +177,47 @@ let x = [100,78,69,85,33,99,78,88];
 // console.log(x);
 
 //刪減區域0開始~位置
-console.log(x);
+// console.log(x);
 
-x.splice(2,5)
-console.log(x);
+// x.splice(2,5)
+// console.log(x);
 
-//增加
-x.splice(2,5,23,32)
-console.log(x);
+// //增加
+// x.splice(2,5,23,32)
+// console.log(x);
 
-//後面增加
-x.splice(-1,2)
-console.log(x);
+// //後面增加
+// x.splice(-1,2)
+// console.log(x);
 
-//接著增加
-x.splice(2,4,22,33)
-console.log(x);
+// //接著增加
+// x.splice(2,4,22,33)
+// console.log(x);
+
+
+//Object
+
+// function person(name ,age ,weight, height){
+//     this.name = name;
+//     this.age = age;
+//     this.weight = weight;
+//     this.height = height;
+//     this.sayHello = function(){
+//         return "你好，我是 "+ name + " 今年 " + age + " 歲，身高 " + height + " 公分 , "+ weight +" 體重 。<br>"; 
+//     }
+
+// }
+
+// person1 = new person('willie',40,70,180);
+// person2 = new person('siang',31,63,158);
+// person3 = new person('abby',2,18,90);
+// document.write(person1.sayHello());
+// document.write(person2.sayHello());
+// document.write(person3.sayHello());
+
+//DOM
+function sayHi(){
+    console.log('Hi');
+}
+
+setInterval(sayHi,1000);
