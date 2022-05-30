@@ -220,4 +220,9 @@ function sayHi(){
     console.log('Hi');
 }
 
-setInterval(sayHi,1000);
+let myInterval = setInterval(sayHi,1000);
+
+function stop(){
+    clearInterval(myInterval);
+}
+
