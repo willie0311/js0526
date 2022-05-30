@@ -89,10 +89,18 @@
 //     }
 // }
 
-//宣告函式
-function myname(myid){
-    document.write('姓名:'+ myid)
-}
+// //宣告函式
+// function myname(myid){
+//     document.write('姓名:'+ myid)
+// }
 
-//執行
-myname('willie');
+// //執行
+// myname('willie');
+
+//參數的dc不等於變數的pdc
+function convertDF(dc){
+    return dc *1.8+32;
+}
+//pdc是變數
+let pdc = prompt('請輸入攝氏溫度:','25');
+document.write('華氏溫度為:'+ convertDF(pdc))
