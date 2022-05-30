@@ -166,12 +166,30 @@
 // document.write('</table>');
 
 
-let x = [100,78,69,85,33];
-x.push(99);
+let x = [100,78,69,85,33,99,78,88];
+// x.push(99);
+// console.log(x);
+// x.pop();
+// console.log(x);
+// x.unshift(99);
+// console.log(x);
+// x.shift();
+// console.log(x);
+
+//刪減區域0開始~位置
 console.log(x);
-x.pop();
+
+x.splice(2,5)
 console.log(x);
-x.unshift(99);
+
+//增加
+x.splice(2,5,23,32)
 console.log(x);
-x.shift();
+
+//後面增加
+x.splice(-1,2)
+console.log(x);
+
+//接著增加
+x.splice(2,4,22,33)
 console.log(x);
