@@ -140,7 +140,10 @@
 
 let student = ["willie","siang","abby"];
 document.write('<table border="1"><tr><td>編號</td><td>姓名</td></tr>');
-for (let i = 0;i <student.length;i++){
-    document.write('<tr><td>'+(i+1)+'</td><td>'+student[i]+'</td></tr>');
+// for (let i = 0;i <student.length;i++){
+for(i in student){
+    document.write('<tr><td>'+(Number(i)+1)+'</td><td>'+student[i]+'</td></tr>');
 }
 document.write('</table>');
+
+//for in 要注意 i會變成字串 要轉換成數字 
