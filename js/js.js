@@ -216,13 +216,24 @@
 // document.write(person3.sayHello());
 
 //DOM
-function sayHi(){
-    console.log('Hi');
-}
+// function sayHi(){
+//     console.log('Hi');
+// }
 
-let myInterval = setInterval(sayHi,1000);
+// let myInterval = setInterval(sayHi,1000);
 
-function stop(){
-    clearInterval(myInterval);
-}
+// function stop(){
+//     clearInterval(myInterval);
+// }
 
+// console.log('Hi');
+
+// console.error('Hi');
+
+// console.warn('Hi');
+
+
+let myH1 = document.getElementById('first');
+let myP = document.getElementsByClassName('second');
+console.log(myH1);
+console.log(myP);
