@@ -138,12 +138,29 @@
 
 //array
 
-let student = ["willie","siang","abby"];
-document.write('<table border="1"><tr><td>編號</td><td>姓名</td></tr>');
-// for (let i = 0;i <student.length;i++){
-for(i in student){
-    document.write('<tr><td>'+(Number(i)+1)+'</td><td>'+student[i]+'</td></tr>');
+// let student = ["willie","siang","abby"];
+// document.write('<table border="1"><tr><td>編號</td><td>姓名</td></tr>');
+// // for (let i = 0;i <student.length;i++){
+// for(i in student){
+//     document.write('<tr><td>'+(Number(i)+1)+'</td><td>'+student[i]+'</td></tr>');
+// }
+// document.write('</table>');
+
+// //for in 要注意 i會變成字串 要轉換成數字 
+
+//多維陣列
+
+let student = new Array();
+student[0]=["willie","99","96"];
+student[1]=["willie","97","92"];
+student[2]=["willie","86","80"];
+
+document.write("<table border='1'><tr><td>姓名</td><td>國文</td><td>英文</td></tr>");
+for(let i=0; i<student.length;i++){
+    document.write("<tr>");
+    for(let j=0 ; j<student[i].length;j++){
+        document.write('<td>'+student[i][j]+"</td>");
+    }
+    document.write('</tr>');
 }
 document.write('</table>');
-
-//for in 要注意 i會變成字串 要轉換成數字 
