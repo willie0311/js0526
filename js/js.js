@@ -238,7 +238,20 @@
 // console.log(myH1);
 // console.log(myP);
 
-let first = document.querySelector('#text');
-console.log(first);
-let second = document.querySelectorAll('.second');
-console.log(second);
+// let first = document.querySelector('#text');
+// console.log(first);
+// let second = document.querySelectorAll('.second');
+// console.log(second);
+
+// 箭頭函式
+sayHi();
+
+function sayHi(){
+    console.log('Hi');
+}
+
+let sayHi = () => {
+    console.log('Hi');
+}
+
+sayHi();
