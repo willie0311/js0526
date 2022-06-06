@@ -244,14 +244,40 @@
 // console.log(second);
 
 // 箭頭函式
-sayHi();
+// sayHi();
 
-function sayHi(){
-    console.log('Hi');
+// function sayHi(){
+//     console.log('Hi');
+// }
+
+// let sayHi = () => {
+//     console.log('Hi');
+// }
+
+// sayHi();
+
+
+// let TCNR = {
+//     Name:"中彰投分屬"
+//     myName(){
+//         console.log("TCNR是"+ this.name + "。");
+//     },
+//     address: () =>{
+        
+//     }
+// }
+
+
+let Numbers = [15,3,25,10,27,35];
+
+for (let i=0;i<Numbers.length;i++){
+    if (Numbers[i] >20){
+        console.log(Numbers[i]);
+    }
 }
 
-let sayHi = () => {
-    console.log('Hi');
-}
-
-sayHi();
+Numbers.forEach(function Num(n){
+    if(n >20){
+        console.log(n);
+    }     
+})
