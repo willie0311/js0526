@@ -270,7 +270,6 @@
 // TCNR.myName();
 // TCNR.address();
 
-let Numbers = [15,3,25,10,27,35];
 
 // for (let i=0;i<Numbers.length;i++){
 //     if (Numbers[i] >20){
@@ -278,10 +277,22 @@ let Numbers = [15,3,25,10,27,35];
 //     }
 // };
 
-Numbers.forEach(function(n , index , array){
-    if(n >20){
-        console.log(n);
-        console.log(n +"的index是" + index);
-        console.log(array[3]);
-    }     
-});
+// Numbers.forEach(function(n , index , array){
+//     if(n >20){
+//         console.log(n);
+//         console.log(n +"的index是" + index);
+//         console.log(array[3]);
+//     }     
+// });
+
+// array
+let Numbers = [15,3,25,10,27,35];
+console.log(Numbers);
+
+// HTMLCollection
+let myP1= document.getElementsByClassName("second");
+console.log(myP1);
+
+//NodeList
+let myP2= document.querySelectorAll(".second");
+console.log(myP2);
