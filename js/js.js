@@ -319,6 +319,9 @@
 
 let myP = document.querySelector("p");
 
-myP.classList.remove("blue");
+console.log(myP.classList);
+console.log(myP.classList.contains("red"));
+
+// myP.classList.add("blue");
 
 
