@@ -287,14 +287,26 @@
 // });
 
 
-// array
-let Numbers = [15,3,25,10,27,35];
-console.log(Numbers);
+// // array
+// let Numbers = [15,3,25,10,27,35];
+// console.log(Numbers);
+// //length ,index
+// //push , pop , shift , unshift , slice
 
-// HTMLCollection
-let myP1= document.getElementsByClassName("second");
-console.log(myP1);
+// // HTMLCollection
+// let myP1= document.getElementsByClassName("second");
+// console.log(myP1);
 
-//NodeList
-let myP2= document.querySelectorAll(".second");
-console.log(myP2);
+
+// //NodeList
+// //forEach
+// let myP2= document.querySelectorAll(".second");
+// console.log(myP2);
+
+let myP = document.querySelector("h1#first");
+let body = myP.parentElement;
+let myH1 = body.children[1];
+console.log(myH1);
+
+myH1.innerHTML = "測試";
+console.log(myH1)
