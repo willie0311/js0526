@@ -317,11 +317,16 @@
 
 // body.appendChild(myH1);
 
-let myP = document.querySelector("p");
+// let myP = document.querySelector("p");
 
-console.log(myP.classList);
-console.log(myP.classList.contains("red"));
+// console.log(myP.classList);
+// console.log(myP.classList.contains("red"));
 
 // myP.classList.add("blue");
 
 
+let a = document.querySelector("a");
+console.log(a.getAttribute("href"));
+
+let img = document.querySelector("img");
+console.log(img.getAttribute("alt"));
