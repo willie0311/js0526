@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.bold {
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */

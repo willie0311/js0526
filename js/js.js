@@ -311,8 +311,14 @@
 // myH1.innerHTML = "測試";
 // console.log(myH1)
 
-let body = document.querySelector("body");
-let myH1 = document.createElement("h1");
-myH1.innerText="歡迎光臨"
+// let body = document.querySelector("body");
+// let myH1 = document.createElement("h1");
+// myH1.innerText="歡迎光臨"
 
-body.appendChild(myH1);
+// body.appendChild(myH1);
+
+let myP = document.querySelector("p");
+
+myP.classList.remove("blue");
+
+
