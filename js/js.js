@@ -257,27 +257,29 @@
 // sayHi();
 
 
-// let TCNR = {
-//     Name:"中彰投分屬"
-//     myName(){
-//         console.log("TCNR是"+ this.name + "。");
-//     },
-//     address: () =>{
-        
-//     }
-// }
-
-
-let Numbers = [15,3,25,10,27,35];
-
-for (let i=0;i<Numbers.length;i++){
-    if (Numbers[i] >20){
-        console.log(Numbers[i]);
+let TCNR = {
+    Name:"中彰投分屬",
+    myName(){
+        console.log("TCNR是"+ this.Name + "。");
+    },
+    address: () =>{
+        console.log("TCNR的地址是台中市西屯區工業區一路100號");
     }
 }
 
-Numbers.forEach(function Num(n){
-    if(n >20){
-        console.log(n);
-    }     
-})
+TCNR.myName();
+TCNR.address();
+
+// let Numbers = [15,3,25,10,27,35];
+
+// for (let i=0;i<Numbers.length;i++){
+//     if (Numbers[i] >20){
+//         console.log(Numbers[i]);
+//     }
+// }
+
+// Numbers.forEach(function Num(n){
+//     if(n >20){
+//         console.log(n);
+//     }     
+// })
