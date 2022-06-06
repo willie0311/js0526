@@ -278,7 +278,7 @@ let Numbers = [15,3,25,10,27,35];
 //     }
 // };
 
-Numbers.forEach((n , index , array) => {
+Numbers.forEach(function(n , index , array){
     if(n >20){
         console.log(n);
         console.log(n +"的index是" + index);
