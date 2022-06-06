@@ -303,10 +303,16 @@
 // let myP2= document.querySelectorAll(".second");
 // console.log(myP2);
 
-let myP = document.querySelector("h1#first");
-let body = myP.parentElement;
-let myH1 = body.children[1];
-console.log(myH1);
+// let myP = document.querySelector("h1#first");
+// let body = myP.parentElement;
+// let myH1 = body.children[1];
+// console.log(myH1);
 
-myH1.innerHTML = "測試";
-console.log(myH1)
+// myH1.innerHTML = "測試";
+// console.log(myH1)
+
+let body = document.querySelector("body");
+let myH1 = document.createElement("h1");
+myH1.innerText="歡迎光臨"
+
+body.appendChild(myH1);
