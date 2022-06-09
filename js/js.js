@@ -346,9 +346,13 @@ localStorage.setItem("age","40");
 localStorage.setItem("add","Taiwan");
 
 // localStorage.removeItem("age");
-// localStorage.clear();
+localStorage.clear();
 
-console.log(localStorage);
+let names = ["willie","siang","abby"];
+console.log(names);
 
-let myName = localStorage.getItem("name");
-document.write(myName);
+localStorage.setItem("names",names);
+
+
+let myNames = localStorage.getItem("names");
+console.log(typeof myNames,myNames);
