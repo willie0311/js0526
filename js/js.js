@@ -341,18 +341,30 @@
 // myP.style.backgroundColor = "yellow"  //駝峰寫法(1)
 // myP.style = "background-color:green"; //Css寫法(2) 
 
-localStorage.setItem("name","willie");
-localStorage.setItem("age","40");
-localStorage.setItem("add","Taiwan");
+// localStorage.setItem("name","willie");
+// localStorage.setItem("age","40");
+// localStorage.setItem("add","Taiwan");
 
-// localStorage.removeItem("age");
-localStorage.clear();
+// // localStorage.removeItem("age");
+// localStorage.clear();
+
+// let names = ["willie","siang","abby"];
+// console.log(names);
+
+// localStorage.setItem("names",names);
+
+
+// let myNames = localStorage.getItem("names");
+// console.log(typeof myNames,myNames);
+
 
 let names = ["willie","siang","abby"];
-console.log(names);
 
-localStorage.setItem("names",names);
+// 使用JSON.stringify()將陣列轉換成字串
+// setItem存放資料
+localStorage.setItem("names",JSON.stringify(names));//[]也轉換成字串
 
-
-let myNames = localStorage.getItem("names");
-console.log(typeof myNames,myNames);
+// 使用JSON.parse()將陣列轉換成字串
+// getItem取得資料
+let myNames = JSON.parse(localStorage.getItem("names"));//轉換成陣列
+console.log(myNames);
