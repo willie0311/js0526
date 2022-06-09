@@ -341,15 +341,14 @@
 // myP.style.backgroundColor = "yellow"  //駝峰寫法(1)
 // myP.style = "background-color:green"; //Css寫法(2) 
 
-let a = document.querySelector("div.a");
-let b = document.querySelector("div.b");
+localStorage.setItem("name","willie");
+localStorage.setItem("age","40");
+localStorage.setItem("add","Taiwan");
 
-a.addEventListener("click" , ()=>{
-    alert("a的callback");
-});
+// localStorage.removeItem("age");
+// localStorage.clear();
 
+console.log(localStorage);
 
-b.addEventListener("click" , (e)=>{
-    e.stopPropagation();
-    alert("b的callback");
-});
+let myName = localStorage.getItem("name");
+document.write(myName);
