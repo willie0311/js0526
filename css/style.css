@@ -1,12 +1,17 @@
-.red {
+.a {
   background-color: red;
+  width: 300px;
+  height: 300px;
 }
 
-.blue {
+.b {
   background-color: blue;
+  width: 150px;
+  height: 150px;
 }
 
 .bold {
   font-weight: 800;
+  
 }
 /*# sourceMappingURL=style.css.map */

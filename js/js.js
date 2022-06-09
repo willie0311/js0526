@@ -325,8 +325,31 @@
 // myP.classList.add("blue");
 
 
-let a = document.querySelector("a");
-console.log(a.getAttribute("href"));
+// let a = document.querySelector("a");
+// console.log(a.getAttribute("href"));
 
-let img = document.querySelector("img");
-console.log(img.getAttribute("alt"));
+// let img = document.querySelector("img");
+// console.log(img.getAttribute("alt"));
+
+// let section = document.querySelector("section");
+// let secqs = section.querySelectorAll("p.red");
+// console.log(secqs);
+
+// let myP = document.querySelector("p");
+// console.log(myP);
+
+// myP.style.backgroundColor = "yellow"  //駝峰寫法(1)
+// myP.style = "background-color:green"; //Css寫法(2) 
+
+let a = document.querySelector("div.a");
+let b = document.querySelector("div.b");
+
+a.addEventListener("click" , ()=>{
+    alert("a的callback");
+});
+
+
+b.addEventListener("click" , (e)=>{
+    e.stopPropagation();
+    alert("b的callback");
+});
